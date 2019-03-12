@@ -1,0 +1,29 @@
+Reading a Text File in Python
+There are actually a number of ways to read a text file in Python, not just one.
+If you need to extract a string that contains all characters in the file, you can use the following
+method:
+file.read()
+
+The full code to work with this method will look something like this:
+file = open(“testfile.text”, “r”)
+print file.read()
+The output of that command will display all the text inside the file, the same text we told the
+interpreter to add earlier. There’s no need to write it all out again, but if you must know,
+everything will be shown except for the “$ cat testfile.txt” line.
+Another way to read a file is to call a certain number of characters.
+For example, with the following code the interpreter will read the first five characters of stored
+data and return it as a string:
+file = open(“testfile.txt”, “r”)
+
+print file.read(5)
+Using the File Write Method
+One thing you’ll notice about the file write method is that it only requires a single parameter,
+which is the string you want to be written.
+This method is used to add information or content to an existing file. To start a new line after you
+write data to the file, you can add an EOL character.
+file = open(“testfile.txt”, “w”)
+file.write(“This is a test”)
+file.write(“To add more lines.”)
+file.close()
+Obviously, this will amend our current file to include the two new lines of text. There’s no need
+to show output.
