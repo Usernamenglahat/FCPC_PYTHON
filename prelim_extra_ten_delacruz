@@ -1,0 +1,22 @@
+#extra_ten_DELACRUZ
+first_name = input ("Enter Your Name: ")
+name = ""
+
+for x in range (len(first_name)):
+    char =first_name[x]
+
+    if char == "K":
+        name += "1"
+    elif char == "U":
+        name += "2"
+    elif char == "R":
+        name += "3"
+    elif char == "T":
+        name += "4"
+
+
+
+
+    else:
+        name += name
+print(name)
